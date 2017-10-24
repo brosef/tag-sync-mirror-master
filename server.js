@@ -625,6 +625,7 @@ function findAudio (dir, done) {
 }
 
 function handleError (req, res, error) {
+  // Header handling behavior is breaking things
   //if (req.headers['accept'].split(",").indexOf("text/html") > -1) {
   //  res.writeHead(200, {"Content-Type": "text/html"});
   //  res.end("<html><body><h1>Error</h1><p>" + error + "</p></body</html>");
